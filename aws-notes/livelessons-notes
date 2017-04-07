@@ -1,0 +1,47 @@
+
+                        INTRODUCTION
+
+Cloud computing charecteristics
+
+    - On demand = get what you need when you need it.
+    - Broad network acces = you have access private, public and internet.
+    - Resource pooling = Lot of supporting resources are shared across multiple tenants.
+    - Rapid Elasticity = ability to scale up and down immediately whenever it is required.
+    - Measured Service = pay as u go or pay for what you use.
+
+Cloud computing service models
+    SAAS
+    PAAS
+    IAAS (aws is infrastructure as a service model)
+
+
+Global Infrastructure
+    Regions
+        currently 14 available regions. regions are primary building blocks of aws, cost of services
+        varies across different regions.
+
+    Availability zones
+        collection of data centers. every region has atleast two availability zones. connected with private
+        fiber are key to high availability and fault tolerance.
+
+    Edge locations
+        it serve two aws services
+
+            1. Amazon cloud front. (aws cdn)
+            2. route 53
+        Edge locations stand on their own.
+
+    Scope of services
+        1. Global services
+        2. Regional services
+        3. Availability zone services
+
+
+                            SECURITY IN AWS
+    
+
+
+
+
+
+

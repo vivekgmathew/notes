@@ -38,9 +38,65 @@ Global Infrastructure
 
 
                             SECURITY IN AWS
-    
 
+    multi factor authentication is the combination atleast two of the following three things.
 
+        - Something you know (user name and password)
+        - Something you have (token or key devices)
+        - Something you are (biometric)
+    MFA is the best practise.
+
+    access keys required for using aws cli and aws sdk.
+
+    Permissions and Policies
+        permission(authorization is granted via policies)
+        policies are written in JSON
+        Policies are of two types
+
+            1. Managed policies
+                a. aws managed policies
+                b. customer managed policies
+            2. Inline policy
+                put policy diretly to users account.
+
+        We can create policies using
+            a. generator
+            b. hand written policies
+
+        Evaluation logic of policies are as follows
+            - Defaults to implicit deny
+            - Explicit deny (this can never be override)
+            - Explicit allow
+
+        Amazon resource name(ARN)
+            way of uniquely identifying and amazon resource.
+
+            arn:partition:service:region:account-id:resourceType/resource or
+            arn:partition:service:region:account-id:resourceType:resource
+
+            most of the partition is named aws.
+
+        Roles
+            alternate form of authentication. provides a temporary form of credentials. we can attach roles to
+            ec2 instances, aws services or user etc. by using roles temporary credentials will be available
+            from aws security token service.
+
+        Federated users
+
+            In corporate environment reuse existing security mechanisms such as LDAP, active directory or SSO
+            to login to aws services rather that creating and managing additional aws accounts.
+
+        Resource policies
+            policies applied to a resource eg to s3 bucket or dynamodb table.
+
+        Best practises
+            - leverage groups
+            - grant least privilege
+            - implement strong password policy
+            - leverage roles for cross account access
+            - use explicit deny statements
+            - never share credentials
+            - 
 
 
 

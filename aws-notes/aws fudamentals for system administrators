@@ -1,0 +1,121 @@
+aws regions
+    its a geographic area
+
+availablility zones
+    data centers inside region
+
+edge location
+
+
+Security measured in aws
+    - Security Groups
+    - Virtual private clouds
+    - Direct connect
+    - Import / Export
+    - VPN Access
+    - Dedicated Server
+
+
+
+Ephemeral (temperoary) storage or instance store
+
+ temporary storage associated with ec2 instance.
+
+ - instance store
+ - Temporary block level storage
+ - Free storage with ec2 instance
+ - Data is lost when instance is terminated or stopped.
+
+s3
+    - Internet accessible via HTTP / HTTPS
+    - Unlimited bucket size
+    - 5TB object size
+
+Elastic block storage (EBS)
+
+    - Not internet accessible
+    - supporting service of ec2
+    - persistent system for ec2 instance
+    - does not need to attach to a single instance
+    - can be transfered between AZs
+    - Supports incremental snapshots
+ ebs can be created at the volume link in ec2 dashboard
+
+ Galcier
+    - very cheap storage
+    - usefull for infrequent data
+    - very slow
+
+ Elastic Compute Cloud
+    virtual machines based on AMIs
+
+ ECU (elastic compute unit)
+    A relative measure of processing unit.
+
+ EC2 instance types
+    - Micro instances
+    - General Purpose instances
+    - Compute Optimized
+    - GPU instances
+    - Memory Optimized
+    - Storage Optimized
+
+
+ VPC
+    logically isolated network inside aws cloud.
+
+    security level
+        Resource level traffic firewalls.
+        Ingres and Egress
+        Stateful
+            return traffic allowed
+
+    Access control list
+        source and protocol filtering
+        subnet level traffic firewall
+            - separate inbound and outbound rule set.
+        stateless
+            traffic is strictly filtered
+
+ Elastic Load balancing
+    - Region wide load balancer
+    - Can be used internally or externally.
+
+ Route53
+       its available at all aws edge locations
+       100% SLA uptime
+
+ cloudwatch
+    monitoring system
+    basic monitoring (7 metrics, 5 minutes)
+
+ Autoscaling
+    ability to expand or shrink ec2 instances on-demand
+
+
+ AWS Lambda
+   event driven compute service. does not require an instance.
+
+ SQS
+    unlimited messages and queue sizes
+    payload upto 256kb
+
+ SNS
+    offers push messaging
+
+ Cloudfront
+    global cdn, it leverages all aws edge locations. it caches static contents at edge locations or proxy dynamic
+    contents.
+
+ Cloudformation
+    automates aws resource provisioning
+
+ Elastic bean stack
+    application hosting service
+
+ Cloudtrail
+    records all auditing information
+
+
+
+

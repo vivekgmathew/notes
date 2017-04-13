@@ -1,0 +1,29 @@
+cloud watch - set alarms and notifications in response to events. set alarms based on service metric thresholds
+alert destinations can easly be set using simple notification service. apart from sns we can also use
+auto scaling actions for triggered alarms.
+
+SNS
+    companions to cloud watch. main structure in sns is topic. topic is used to create a arn that can then have
+    notifications send to it. then we can subscribe to topic using email or sms and any notification send to that
+    sns topic will be forwarded to subscribed end points. topics are region specific and can only be notified by
+    alarms in the same region.
+
+IAM
+    apply policies to groups rather than individual users.
+
+Elastic cloud compute
+    virtual machine service that runs software of your choice.
+
+VPC
+    create virtual private networks inside aws services.
+
+    - Security groups
+        defines incoming / outgoing ip addresses and ports. kind of like a mini firewall. its attached at the
+        instance level and can be shared across many instances.
+
+    - Routing tables
+        configure routing destination for traffic coming out of vpc. each vpc has one routing table.
+
+    - Network Access Control List
+        each vpc has one access control list. acts as an ip filtering table. specifies which ips allowed
+        through vpc for incoming and outgoing traffic.

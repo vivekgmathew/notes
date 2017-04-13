@@ -96,8 +96,22 @@ Global Infrastructure
             - leverage roles for cross account access
             - use explicit deny statements
             - never share credentials
-            - 
 
+
+                                            NETWORKING IN AWS
+
+        VPC
+            virtual private network gives us our own private network within amazon web services. a vpc is specific to
+            a region and sub nets are specific to availability zones. a vpc can span entire region.
+
+        Sub nets
+            by default a newly created vpc will never have sub nets. you have to have a subnet to launch aws
+            resources like ec2 instances. subnets are specific to availability zones. you have to select availability
+            zone while creating subnet.CIDR block of sub net should fall in the range of VPC. first 4 ip address in the
+            subnet is reserved for special purposes and last 1 ip as broadcast address.
+
+        Routing
+            routing allows us to control the traffic in aws vpc
 
 
 

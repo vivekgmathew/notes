@@ -1,0 +1,23 @@
+Virtual Private Cloud
+    foundation of the infrastrure we create on aws cloud.
+    its a logically isolated network in aws cloud. it controls the network architecture.
+
+    subnets
+        basic building blocks in vpc.
+
+    it also contains route tables and internet gateways.
+
+    VPN charecteristics
+        aws reserves 5 ip addresses per subnet(first 4 and last 1)
+        subnets can be of types private, public and vpn. subnets do not span availability zones
+        vpc spans entire region. CIDR can be 16 - 28 . IP prefix can be anything
+
+    VPC Security
+        Security groups
+            Resource level traffic firewall. Ingress and Egress. Statefull, return traffic allowed
+
+        Access Control Lists
+            Source and protocol filtering
+            Subnet level traffic firewall
+                separate inbound and outbound rule set
+                stateless, traffic is filtered

@@ -1,0 +1,24 @@
+every aws region has one default vpc, which was created automatically by aws.
+DHCP option set is associated with aws account. we can have multiple dhcp option sets but a single vpc
+can only have one dhcp option set.
+
+Route table
+    Each subnet has got a route table.
+
+A subnet can be public subnet if it connected to internet gateway.
+there is a 1 - 1 mapping between internet gateways and vpcs.
+
+elastic ip - needs to explicitly create and associate with instance or network interface
+required for reliable persistent public facing ip address. we an assign elastic ips to instances
+or network interface.
+
+
+limit of elastic ips 5 per vpc.
+
+
+Connecting private subnets to internet
+    its done using NAT instance which is part of public subnet.
+    the only traffic allowed in is the response to what we send. ie NAT is instance only allow
+    stateful responses.
+
+    NAT instances has got source and destination checks. isable that check.
